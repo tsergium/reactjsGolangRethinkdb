@@ -8,17 +8,15 @@ class UserForm extends Component{
         this.props.setUserName(userName);
         node.value = '';
     }
-
     render(){
-        return(
+        return (
             <form onSubmit={this.onSubmit.bind(this)}>
                 <div className='form-group'>
                     <input
-                        ref="userName"
-                        type="text"
-                        className="form-control"
-                        placeholder="Set Your Name..."
-                    />
+                        ref='userName'
+                        type='text'
+                        className='form-control'
+                        placeholder='Set Your Name...' />
                 </div>
             </form>
         )

@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import User from './User.jsx';
 
-class UserList extends Component{
+class UserList extends React.Component{
     render(){
         return (
             <ul>{

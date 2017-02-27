@@ -16,8 +16,7 @@ class MessageForm extends Component{
                     ref='message'
                     type='text'
                     className='form-control'
-                    placeholder='Add Message...'
-                />
+                    placeholder='Add Message...' />
             )
         }
         return (
@@ -34,6 +33,5 @@ MessageForm.propTypes = {
     activeChannel: React.PropTypes.object.isRequired,
     addMessage: React.PropTypes.func.isRequired
 }
-
 
 export default MessageForm

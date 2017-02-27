@@ -1,3 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 rtsupport/node_modules
+rtsupport/bundle.js
