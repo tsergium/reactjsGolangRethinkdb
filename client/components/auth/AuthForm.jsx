@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-var jwt = require('jsonwebtoken');
 
 class AuthForm extends Component{
     onSubmit(e){
