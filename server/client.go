@@ -67,7 +67,7 @@ func NewClient(socket *websocket.Conn, findHandler FindHandler,
 session *r.Session) *Client {
 	var user User
 	user.Name = "anonymous"
-	res, err := r.Table("user").Insert(user).RunWrite(session)
+	res, err := r.Table("user").Insert(user, r.InsertOpts{Upsert: true}).RunWrite(session)
 	if err != nil {
 		log.Println(err.Error())
 	}
